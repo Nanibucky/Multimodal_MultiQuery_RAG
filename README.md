@@ -11,6 +11,11 @@ An intelligent content discovery platform leveraging advanced Retrieval-Augmente
 - **Dual Processing Pipeline**
   - Primary: PyPDF with GPT-4 for robust text extraction
   - Advanced: ColPaLi + QWEN2-VL for enhanced handling of PDFs with images
+      **ColPaLi + QWEN2-VL Implementation**
+     - Superior handling of documents with images, tables, and complex layouts
+     - Enhanced visual understanding and context preservation
+     - Better performance with detailed technical documents
+     - *Requires higher GPU resources (Recommended: NVIDIA GPU with ≥16GB VRAM)*
 - **Advanced RAG Implementation**
   - Multi-query approach for comprehensive retrieval
   - Maximal Marginal Relevance (MMR) for result diversity
@@ -78,18 +83,6 @@ streamlit run main_rag.py
   - Backoff for retry handling
   - Logging for system monitoring
 
-   **Advanced Pipeline (Recommended for Complex Documents)**
-   - **ColPaLi + QWEN2-VL Implementation**
-     - Superior handling of documents with images, tables, and complex layouts
-     - Enhanced visual understanding and context preservation
-     - Better performance with detailed technical documents
-     - *Requires higher GPU resources (Recommended: NVIDIA GPU with ≥16GB VRAM)*
-
-## 🙏 Acknowledgments
-- OpenAI for GPT models
-- Hugging Face for transformer models
-- FAISS team for vector similarity search
-- ColPaLi team for PDF processing capabilities
 
 ## 📞 Contact
 - Tharun Reddy Pyayala
