@@ -64,34 +64,6 @@ OPENAI_API_KEY=your_api_key_here
 streamlit run main_rag.py
 ```
 
-## 💡 Usage
-
-### Basic Usage
-1. Select input method (URL/PDF/Audio)
-2. Provide input content
-3. Update vector store
-4. Ask questions about the content
-
-### Advanced Features
-- **Multi-Query Processing**
-  ```python
-  # Example of generating multiple queries
-  response_generator = ResponseGenerator(llm, vector_store)
-  response = response_generator.generate_response(question)
-  ```
-
-- **PDF Image Processing**
-  ```python
-  # Using ColPaLi + QWEN2-VL
-  from colpali_vlm import process_document
-  results = process_document(pdf_path)
-  ```
-
-## 🎯 Performance Metrics
-- Improved information retrieval accuracy across formats
-- Reduced query processing time through optimized vector search
-- Enhanced user experience with intuitive interface
-- Successful handling of complex documents with tables and images
 
 ## 🔧 Technical Stack
 - **Frontend**: Streamlit
@@ -106,11 +78,12 @@ streamlit run main_rag.py
   - Backoff for retry handling
   - Logging for system monitoring
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+   **Advanced Pipeline (Recommended for Complex Documents)**
+   - **ColPaLi + QWEN2-VL Implementation**
+     - Superior handling of documents with images, tables, and complex layouts
+     - Enhanced visual understanding and context preservation
+     - Better performance with detailed technical documents
+     - *Requires higher GPU resources (Recommended: NVIDIA GPU with ≥16GB VRAM)*
 
 ## 🙏 Acknowledgments
 - OpenAI for GPT models
