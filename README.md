@@ -11,7 +11,7 @@ An intelligent content discovery platform leveraging advanced Retrieval-Augmente
 - **Dual Processing Pipeline**
   - Primary: PyPDF with GPT-4 for robust text extraction
   - Advanced: ColPaLi + QWEN2-VL for enhanced handling of PDFs with images
-      **ColPaLi + QWEN2-VL Implementation**
+     - ColPaLi + QWEN2-VL Implementation**
      - Superior handling of documents with images, tables, and complex layouts
      - Enhanced visual understanding and context preservation
      - Better performance with detailed technical documents
