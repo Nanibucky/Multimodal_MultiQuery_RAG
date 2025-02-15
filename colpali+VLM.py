@@ -5,7 +5,6 @@ import torch
 
 RAG = RAGMultiModalModel.from_pretrained("vidore/colpali")
 
-
 RAG.index(
     input_path="/content/youth_magazine_en.pdf",
     index_name="image_index", # index will be saved at index_root/index_name/
